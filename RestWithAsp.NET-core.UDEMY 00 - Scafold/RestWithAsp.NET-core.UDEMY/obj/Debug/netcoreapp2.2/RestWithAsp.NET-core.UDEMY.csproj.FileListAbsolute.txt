@@ -1,0 +1,14 @@
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\bin\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.deps.json
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\bin\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.runtimeconfig.json
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\bin\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.runtimeconfig.dev.json
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\bin\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.dll
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\bin\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.pdb
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.csprojAssemblyReference.cache
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.csproj.CoreCompileInputs.cache
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.RazorAssemblyInfo.cache
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.RazorAssemblyInfo.cs
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.AssemblyInfoInputs.cache
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.AssemblyInfo.cs
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.RazorTargetAssemblyInfo.cache
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.dll
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.pdb
