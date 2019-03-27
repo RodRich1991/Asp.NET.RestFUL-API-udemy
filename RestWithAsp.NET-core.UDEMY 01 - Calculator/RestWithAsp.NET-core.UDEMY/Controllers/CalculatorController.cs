@@ -13,8 +13,8 @@ namespace RestWithAsp.NET_core.UDEMY.Controllers
         {
             if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
             {
-                var sum = ConvertToDecimal(firstNumber) + ConvertToDecimal(secondNumber);
-                return Ok(sum.ToString());
+                var result = ConvertToDecimal(firstNumber) + ConvertToDecimal(secondNumber);
+                return Ok(result.ToString());
             }
             return BadRequest("Invalid input!");
         }
@@ -25,8 +25,8 @@ namespace RestWithAsp.NET_core.UDEMY.Controllers
         {
             if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
             {
-                var sum = ConvertToDecimal(firstNumber) - ConvertToDecimal(secondNumber);
-                return Ok(sum.ToString());
+                var result = ConvertToDecimal(firstNumber) - ConvertToDecimal(secondNumber);
+                return Ok(result.ToString());
             }
             return BadRequest("Invalid input!");
         }
@@ -37,8 +37,8 @@ namespace RestWithAsp.NET_core.UDEMY.Controllers
         {
             if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
             {
-                var sum = ConvertToDecimal(firstNumber) * ConvertToDecimal(secondNumber);
-                return Ok(sum.ToString());
+                var result = ConvertToDecimal(firstNumber) * ConvertToDecimal(secondNumber);
+                return Ok(result.ToString());
             }
             return BadRequest("Invalid input!");
         }
@@ -49,18 +49,30 @@ namespace RestWithAsp.NET_core.UDEMY.Controllers
         {
             if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
             {
-                var sum = ConvertToDecimal(firstNumber) / ConvertToDecimal(secondNumber);
-                return Ok(sum.ToString());
+                var result = ConvertToDecimal(firstNumber) / ConvertToDecimal(secondNumber);
+                return Ok(result.ToString());
             }
             return BadRequest("Invalid input!");
         }
 
-        private decimal ConvertToDecimal(string stringNumber)
+        // GET api/square-root/5
+        [HttpGet("square-root/{number}")]
+        public ActionResult SquareRoot(string number)
         {
-            decimal decimalNumber;
-            if (decimal.TryParse(stringNumber, out decimalNumber))
+            if (IsNumeric(number))
             {
-                return decimalNumber;
+                var result = Math.Sqrt(ConvertToDecimal(number));
+                return Ok(result.ToString());
+            }
+            return BadRequest("Invalid input!");
+        }
+
+        private double ConvertToDecimal(string stringNumber)
+        {
+            double doubleNumber;
+            if (double.TryParse(stringNumber, out doubleNumber))
+            {
+                return doubleNumber;
             }
             return 0;
         }
