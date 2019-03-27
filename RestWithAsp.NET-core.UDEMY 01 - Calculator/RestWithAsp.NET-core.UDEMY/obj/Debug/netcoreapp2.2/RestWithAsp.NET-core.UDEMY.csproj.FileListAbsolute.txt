@@ -25,3 +25,4 @@ C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-co
 C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY 01 - Calculator\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.RazorTargetAssemblyInfo.cache
 C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY 01 - Calculator\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.dll
 C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY 01 - Calculator\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.pdb
+C:\Users\rodrigo\Documents\Projects\Asp.NET.RestFUL-API-udemy\RestWithAsp.NET-core.UDEMY 01 - Calculator\RestWithAsp.NET-core.UDEMY\obj\Debug\netcoreapp2.2\RestWithAsp.NET-core.UDEMY.csprojAssemblyReference.cache
