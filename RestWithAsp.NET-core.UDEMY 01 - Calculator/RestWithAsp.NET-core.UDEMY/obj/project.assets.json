@@ -12078,11 +12078,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rodrigo\\Documents\\Projects\\Asp.NET.RestFUL-API-udemy\\RestWithAsp.NET-core.UDEMY\\RestWithAsp.NET-core.UDEMY\\RestWithAsp.NET-core.UDEMY.csproj",
+      "projectUniqueName": "C:\\Users\\rodrigo\\Documents\\Projects\\Asp.NET.RestFUL-API-udemy\\RestWithAsp.NET-core.UDEMY 01 - Calculator\\RestWithAsp.NET-core.UDEMY\\RestWithAsp.NET-core.UDEMY.csproj",
       "projectName": "RestWithAsp.NET-core.UDEMY",
-      "projectPath": "C:\\Users\\rodrigo\\Documents\\Projects\\Asp.NET.RestFUL-API-udemy\\RestWithAsp.NET-core.UDEMY\\RestWithAsp.NET-core.UDEMY\\RestWithAsp.NET-core.UDEMY.csproj",
+      "projectPath": "C:\\Users\\rodrigo\\Documents\\Projects\\Asp.NET.RestFUL-API-udemy\\RestWithAsp.NET-core.UDEMY 01 - Calculator\\RestWithAsp.NET-core.UDEMY\\RestWithAsp.NET-core.UDEMY.csproj",
       "packagesPath": "C:\\Users\\rodrigo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rodrigo\\Documents\\Projects\\Asp.NET.RestFUL-API-udemy\\RestWithAsp.NET-core.UDEMY\\RestWithAsp.NET-core.UDEMY\\obj\\",
+      "outputPath": "C:\\Users\\rodrigo\\Documents\\Projects\\Asp.NET.RestFUL-API-udemy\\RestWithAsp.NET-core.UDEMY 01 - Calculator\\RestWithAsp.NET-core.UDEMY\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
