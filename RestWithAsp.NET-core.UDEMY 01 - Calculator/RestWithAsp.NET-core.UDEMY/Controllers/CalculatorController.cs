@@ -67,6 +67,18 @@ namespace RestWithAsp.NET_core.UDEMY.Controllers
             return BadRequest("Invalid input!");
         }
 
+        // GET api/mean/5/5
+        [HttpGet("mean/{firstNumber}/{secondNumber}")]
+        public ActionResult Mean(string firstNumber, string secondNumber)
+        {
+            if (IsNumeric(firstNumber) && IsNumeric(secondNumber))
+            {
+                var result = (ConvertToDecimal(firstNumber) + ConvertToDecimal(secondNumber)) / 2;
+                return Ok(result.ToString());
+            }
+            return BadRequest("Invalid input!");
+        }
+
         private double ConvertToDecimal(string stringNumber)
         {
             double doubleNumber;
