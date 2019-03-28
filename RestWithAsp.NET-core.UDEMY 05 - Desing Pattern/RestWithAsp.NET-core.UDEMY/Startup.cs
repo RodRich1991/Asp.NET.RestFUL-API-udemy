@@ -4,9 +4,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RestWithAsp.NET_core.UDEMY.V1.Models.Context;
-using RestWithAsp.NET_core.UDEMY.V1.Services;
-using RestWithAsp.NET_core.UDEMY.V1.Services.Implementations;
+using RestWithAsp.NET_core.UDEMY.V1.Model.Context;
+using RestWithAsp.NET_core.UDEMY.V1.Repository;
+using RestWithAsp.NET_core.UDEMY.V1.Repository.Implementation;
+using RestWithAsp.NET_core.UDEMY.V1.Service;
+using RestWithAsp.NET_core.UDEMY.V1.Service.Implementation;
 
 namespace RestWithAsp.NET_core.UDEMY
 {
@@ -32,8 +34,9 @@ namespace RestWithAsp.NET_core.UDEMY
             // API Versioning
             services.AddApiVersioning();
 
-            // Service INjection
+            // Dependency Injection
             services.AddScoped<IPersonService, PersonServiceImpl>();
+            services.AddScoped<IPersonRepository, PersonRepositoryImpl>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

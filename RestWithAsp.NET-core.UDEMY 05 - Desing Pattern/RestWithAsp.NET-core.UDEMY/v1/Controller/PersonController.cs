@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RestWithAsp.NET_core.UDEMY.V1.Models;
-using RestWithAsp.NET_core.UDEMY.V1.Services;
+using RestWithAsp.NET_core.UDEMY.V1.Model;
+using RestWithAsp.NET_core.UDEMY.V1.Service;
 
-namespace RestWithAsp.NET_core.UDEMY.V1.Controllers
+namespace RestWithAsp.NET_core.UDEMY.V1.Controller
 {
     [ApiVersion("1")]
     [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
-    public class PersonController : Controller
+    public class PersonController : ControllerBase
     {
 
         private IPersonService _personService;

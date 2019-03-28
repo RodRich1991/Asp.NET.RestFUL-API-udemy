@@ -1,16 +1,16 @@
-﻿using RestWithAsp.NET_core.UDEMY.V1.Models;
-using RestWithAsp.NET_core.UDEMY.V1.Models.Context;
+﻿using RestWithAsp.NET_core.UDEMY.V1.Model;
+using RestWithAsp.NET_core.UDEMY.V1.Model.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace RestWithAsp.NET_core.UDEMY.V1.Services.Implementations
+namespace RestWithAsp.NET_core.UDEMY.V1.Repository.Implementation
 {
-    public class PersonServiceImpl : IPersonService
+    public class PersonRepositoryImpl : IPersonRepository
     {
         private MySQLContext _mySQLContext;
 
-        public PersonServiceImpl(MySQLContext mySQLContext)
+        public PersonRepositoryImpl(MySQLContext mySQLContext)
         {
             _mySQLContext = mySQLContext;
         }
@@ -66,7 +66,7 @@ namespace RestWithAsp.NET_core.UDEMY.V1.Services.Implementations
             return person;
         }
 
-        private bool Exist(long? id)
+        public bool Exist(long? id)
         {
             return _mySQLContext.Persons.Any(p => p.Id.Equals(id));
         }

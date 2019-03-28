@@ -1,4 +1,4 @@
-﻿namespace RestWithAsp.NET_core.UDEMY.V1.Models
+﻿namespace RestWithAsp.NET_core.UDEMY.V1.Model
 {
     public class Person
     {

@@ -1,9 +1,9 @@
 ﻿using RestWithAsp.NET_core.UDEMY.V1.Model;
 using System.Collections.Generic;
 
-namespace RestWithAsp.NET_core.UDEMY.V1.Service
+namespace RestWithAsp.NET_core.UDEMY.V1.Repository
 {
-    public interface IPersonService
+    public interface IPersonRepository
     {
         Person Create(Person person);
 
@@ -14,5 +14,7 @@ namespace RestWithAsp.NET_core.UDEMY.V1.Service
         Person Update(Person person);
 
         void Delete(long id);
+
+        bool Exist(long? id);
     }
 }
