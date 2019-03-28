@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 
-namespace RestWithAsp.NET_core.UDEMY.Services.Implementations
+namespace RestWithAsp.NET_core.UDEMY.Services
 {
-    interface IPersonService
+    public interface IPersonService
     {
         Person Create(Person person);
 
