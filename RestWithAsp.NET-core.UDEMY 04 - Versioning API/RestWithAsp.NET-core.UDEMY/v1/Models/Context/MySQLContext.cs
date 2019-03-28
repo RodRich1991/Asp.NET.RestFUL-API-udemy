@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace RestWithAsp.NET_core.UDEMY.Models.Context
+namespace RestWithAsp.NET_core.UDEMY.V1.Models.Context
 {
     public class MySQLContext : DbContext
     {

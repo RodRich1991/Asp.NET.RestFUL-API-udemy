@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using RestWithAsp.NET_core.UDEMY.Models.Context;
-using RestWithAsp.NET_core.UDEMY.Services;
-using RestWithAsp.NET_core.UDEMY.Services.Implementations;
+using RestWithAsp.NET_core.UDEMY.V1.Models.Context;
+using RestWithAsp.NET_core.UDEMY.V1.Services;
+using RestWithAsp.NET_core.UDEMY.V1.Services.Implementations;
 
 namespace RestWithAsp.NET_core.UDEMY
 {

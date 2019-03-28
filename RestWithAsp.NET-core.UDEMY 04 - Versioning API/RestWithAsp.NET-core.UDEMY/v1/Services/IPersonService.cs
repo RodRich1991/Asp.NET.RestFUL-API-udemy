@@ -1,6 +1,7 @@
-﻿using System.Collections.Generic;
+﻿using RestWithAsp.NET_core.UDEMY.V1.Models;
+using System.Collections.Generic;
 
-namespace RestWithAsp.NET_core.UDEMY.Services
+namespace RestWithAsp.NET_core.UDEMY.V1.Services
 {
     public interface IPersonService
     {

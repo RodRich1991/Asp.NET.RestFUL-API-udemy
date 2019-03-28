@@ -1,10 +1,10 @@
-﻿using RestWithAsp.NET_core.UDEMY.Models.Context;
+﻿using RestWithAsp.NET_core.UDEMY.V1.Models;
+using RestWithAsp.NET_core.UDEMY.V1.Models.Context;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Threading;
 
-namespace RestWithAsp.NET_core.UDEMY.Services.Implementations
+namespace RestWithAsp.NET_core.UDEMY.V1.Services.Implementations
 {
     public class PersonServiceImpl : IPersonService
     {

@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RestWithAsp.NET_core.UDEMY.Services;
+using RestWithAsp.NET_core.UDEMY.V1.Models;
+using RestWithAsp.NET_core.UDEMY.V1.Services;
 
-namespace RestWithAsp.NET_core.UDEMY.Controllers
+namespace RestWithAsp.NET_core.UDEMY.V1.Controllers
 {
-    [Route("api/[controller]")]
+    [ApiVersion("1")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
     public class PersonController : Controller
     {
@@ -15,14 +17,14 @@ namespace RestWithAsp.NET_core.UDEMY.Controllers
             _personService = personService;
         }
 
-        // GET api/person
+        // GET api/v1/person
         [HttpGet]
         public IActionResult Get()
         {   
             return Ok(_personService.FindAll());
         }
 
-        // GET api/person/5
+        // GET api/v1/person/5
         [HttpGet("{id}")]
         public IActionResult Get(long id)
         {
@@ -32,7 +34,7 @@ namespace RestWithAsp.NET_core.UDEMY.Controllers
             return Ok(_personService.FindById(id));
         }
 
-        // POST api/person
+        // POST api/v1/person
         [HttpPost]
         public IActionResult Post([FromBody] Person person)
         {
@@ -41,7 +43,7 @@ namespace RestWithAsp.NET_core.UDEMY.Controllers
             return new ObjectResult(_personService.Create(person));
         }
 
-        // PUT api/person/5
+        // PUT api/v1/person/5
         [HttpPut]
         public IActionResult Put([FromBody] Person person)
         {
@@ -50,7 +52,7 @@ namespace RestWithAsp.NET_core.UDEMY.Controllers
             return new ObjectResult(_personService.Update(person));
         }
 
-        // DELETE api/person/5
+        // DELETE api/v1/person/5
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {
