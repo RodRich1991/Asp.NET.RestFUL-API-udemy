@@ -22,10 +22,15 @@ namespace RestWithAsp.NET_core.UDEMY
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Database connection
             var connection = Configuration["MySqlConnection:MySqlConnectionString"];
             services.AddDbContext<MySQLContext>(options => options.UseMySql(connection));
 
+            // Default .NET MVC
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            // API Versioning
+            services.AddApiVersioning();
 
             // Service INjection
             services.AddScoped<IPersonService, PersonServiceImpl>();
