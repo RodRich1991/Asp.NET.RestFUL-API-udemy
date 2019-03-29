@@ -4,29 +4,49 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
 using RestWithAsp.NET_core.UDEMY.V1.Model.Context;
 using RestWithAsp.NET_core.UDEMY.V1.Repository;
 using RestWithAsp.NET_core.UDEMY.V1.Repository.Implementation;
 using RestWithAsp.NET_core.UDEMY.V1.Service;
 using RestWithAsp.NET_core.UDEMY.V1.Service.Implementation;
+using System;
 
 namespace RestWithAsp.NET_core.UDEMY
 {
     public class Startup
     {
-        public Startup(IConfiguration configuration)
-        {
-            Configuration = configuration;
-        }
+        public IConfiguration _configuration { get; }
+        private readonly ILogger _logger;
+        public IHostingEnvironment _hostingEnvironment { get;  }
 
-        public IConfiguration Configuration { get; }
+        public Startup(IConfiguration configuration, IHostingEnvironment hostingEnvironment, ILogger<Startup> logger)
+        {
+            _configuration = configuration;
+            _hostingEnvironment = hostingEnvironment;
+            _logger = logger;
+        }
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             // Database connection
-            var connection = Configuration["MySqlConnection:MySqlConnectionString"];
-            services.AddDbContext<MySQLContext>(options => options.UseMySql(connection));
+            var connectionString = _configuration["MySqlConnection:MySqlConnectionString"];
+            services.AddDbContext<MySQLContext>(options => options.UseMySql(connectionString));
+
+            // Envolve Migration Connection
+            if (_hostingEnvironment.IsDevelopment())
+            {
+                try
+                {
+                    var evolveConnection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+                }
+                catch (Exception ex)
+                {
+                    _logger.LogCritical("Database migration connection failed.", ex);
+                    throw;
+                }
+            }
 
             // Default .NET MVC
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
