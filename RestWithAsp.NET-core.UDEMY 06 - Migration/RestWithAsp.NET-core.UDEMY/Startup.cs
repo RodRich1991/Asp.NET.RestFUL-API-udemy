@@ -11,6 +11,7 @@ using RestWithAsp.NET_core.UDEMY.V1.Repository.Implementation;
 using RestWithAsp.NET_core.UDEMY.V1.Service;
 using RestWithAsp.NET_core.UDEMY.V1.Service.Implementation;
 using System;
+using System.Collections.Generic;
 
 namespace RestWithAsp.NET_core.UDEMY
 {
@@ -40,6 +41,15 @@ namespace RestWithAsp.NET_core.UDEMY
                 try
                 {
                     var evolveConnection = new MySql.Data.MySqlClient.MySqlConnection(connectionString);
+                    var evolve = new Evolve.Evolve(evolveConnection, msg => _logger.LogInformation(msg))
+                    {
+                        Locations = new List<string> {
+                            string.Concat("v", ApiVersion.Default.MajorVersion, "/db/migrations"),
+                            string.Concat("v", ApiVersion.Default.MajorVersion, "/db/dataset"),
+                        },
+                        IsEraseDisabled = true,
+                    };
+                    evolve.Migrate();
                 }
                 catch (Exception ex)
                 {
