@@ -2,9 +2,9 @@
 
 namespace RestWithAsp.NET_core.UDEMY.v1.Model.Base
 {
-    [DataContract]
+    //[DataContract]
     public class BaseEntity
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
     }
 }

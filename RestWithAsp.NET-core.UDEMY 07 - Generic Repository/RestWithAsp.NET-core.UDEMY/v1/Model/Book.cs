@@ -7,7 +7,7 @@ namespace RestWithAsp.NET_core.UDEMY.V1.Model
     {
         public string Author { get; set; }
         public DateTime LaunchDate { get; set; }
-        public float Price { get; set; }
+        public decimal Price { get; set; }
         public string Title { get; set; }
     }
 }

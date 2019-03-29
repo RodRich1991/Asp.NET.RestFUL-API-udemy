@@ -16,24 +16,24 @@ namespace RestWithAsp.NET_core.UDEMY.V1.Controller
             _bookService = bookService;
         }
 
-        // GET api/v1/person
+        // GET api/v1/book
         [HttpGet]
         public IActionResult Get()
         {
             return Ok(_bookService.FindAll());
         }
 
-        // GET api/v1/person/5
+        // GET api/v1/book/5
         [HttpGet("{id}")]
         public IActionResult Get(long id)
         {
             var book = _bookService.FindById(id);
             if (book == null)
                 return NotFound();
-            return Ok(_bookService.FindById(id));
+            return Ok(book);
         }
 
-        // POST api/v1/person
+        // POST api/v1/book
         [HttpPost]
         public IActionResult Post([FromBody] Book book)
         {
@@ -42,7 +42,7 @@ namespace RestWithAsp.NET_core.UDEMY.V1.Controller
             return new ObjectResult(_bookService.Create(book));
         }
 
-        // PUT api/v1/person/5
+        // PUT api/v1/book/5
         [HttpPut]
         public IActionResult Put([FromBody] Book book)
         {
@@ -51,7 +51,7 @@ namespace RestWithAsp.NET_core.UDEMY.V1.Controller
             return new ObjectResult(_bookService.Update(book));
         }
 
-        // DELETE api/v1/person/5
+        // DELETE api/v1/book/5
         [HttpDelete("{id}")]
         public IActionResult Delete(long id)
         {

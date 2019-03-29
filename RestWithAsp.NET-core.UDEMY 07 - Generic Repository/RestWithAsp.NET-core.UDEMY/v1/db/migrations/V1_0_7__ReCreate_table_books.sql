@@ -5,4 +5,4 @@ CREATE TABLE books (
     Price decimal(65,2) not null,
     Title longtext,
 	PRIMARY KEY (Id)
-) ENGINE = InnoDB DEFAULT CHARSET=utf8;
+) ENGINE = InnoDB;

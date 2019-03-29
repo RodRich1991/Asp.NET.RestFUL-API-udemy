@@ -31,7 +31,7 @@ namespace RestWithAsp.NET_core.UDEMY.V1.Controller
             var person = _personService.FindById(id);
             if (person == null)
                 return NotFound();
-            return Ok(_personService.FindById(id));
+            return Ok(person);
         }
 
         // POST api/v1/person
