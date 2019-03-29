@@ -7,7 +7,9 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 using RestWithAsp.NET_core.UDEMY.V1.Model.Context;
 using RestWithAsp.NET_core.UDEMY.V1.Repository;
+using RestWithAsp.NET_core.UDEMY.V1.Repository.Base;
 using RestWithAsp.NET_core.UDEMY.V1.Repository.Implementation;
+using RestWithAsp.NET_core.UDEMY.V1.Repository.Implementation.Base;
 using RestWithAsp.NET_core.UDEMY.V1.Service;
 using RestWithAsp.NET_core.UDEMY.V1.Service.Implementation;
 using System;
@@ -66,7 +68,10 @@ namespace RestWithAsp.NET_core.UDEMY
 
             // Dependency Injection
             services.AddScoped<IPersonService, PersonServiceImpl>();
-            services.AddScoped<IPersonRepository, PersonRepositoryImpl>();
+            services.AddScoped<IBaseRepository, PersonRepositoryImpl>();
+
+            services.AddScoped<IBookService, BookServiceImpl>();
+            services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

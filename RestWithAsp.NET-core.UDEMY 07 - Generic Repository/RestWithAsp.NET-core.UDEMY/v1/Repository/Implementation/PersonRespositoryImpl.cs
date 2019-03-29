@@ -6,7 +6,7 @@ using System.Linq;
 
 namespace RestWithAsp.NET_core.UDEMY.V1.Repository.Implementation
 {
-    public class PersonRepositoryImpl : IPersonRepository
+    public class PersonRepositoryImpl : IBaseRepository
     {
         private MySQLContext _mySQLContext;
 

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace RestWithAsp.NET_core.UDEMY.V1.Repository
 {
-    public interface IPersonRepository
+    public interface IBaseRepository
     {
         Person Create(Person person);
 

@@ -6,9 +6,9 @@ namespace RestWithAsp.NET_core.UDEMY.V1.Service.Implementation
 {
     public class PersonServiceImpl : IPersonService
     {
-        private IPersonRepository _personRepository;
+        private IBaseRepository _personRepository;
 
-        public PersonServiceImpl(IPersonRepository personRepository)
+        public PersonServiceImpl(IBaseRepository personRepository)
         {
             _personRepository = personRepository;
         }

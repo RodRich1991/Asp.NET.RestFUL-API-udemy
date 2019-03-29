@@ -15,5 +15,6 @@ namespace RestWithAsp.NET_core.UDEMY.V1.Model.Context
         }
 
         public DbSet<Person> Persons { get; set; }
+        public DbSet<Book> Books { get; set; }
     }
 }
