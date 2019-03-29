@@ -67,11 +67,10 @@ namespace RestWithAsp.NET_core.UDEMY
             services.AddApiVersioning();
 
             // Dependency Injection
-            services.AddScoped<IPersonService, PersonServiceImpl>();
-            services.AddScoped<IBaseRepository, PersonRepositoryImpl>();
-
-            services.AddScoped<IBookService, BookServiceImpl>();
             services.AddScoped(typeof(IBaseRepository<>), typeof(BaseRepository<>));
+
+            services.AddScoped<IPersonService, PersonServiceImpl>();
+            services.AddScoped<IBookService, BookServiceImpl>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
